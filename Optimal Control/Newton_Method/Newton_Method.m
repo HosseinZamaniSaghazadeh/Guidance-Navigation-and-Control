@@ -4,11 +4,13 @@
 x = zeros(2, N);
 x(:, 1) = [0.85; 0.05];
 N = 7;
- %% Funtion to be Omptimized
+a = 1;
+ 
+%% Funtion to be Omptimized
  f = @(x) -log(1 - x(1) - x(2)) - log(x(1)) - log(x(2));
  Gf = @(x) [1/(1 - x(1) - x(2)) - 1/x(1); 1/(1 - x(1) - x(2)) - 1/x(2)];
  Jf = @(x) [1/(1 - x(1) - x(2))^2 + 1/x(1)^2, 1/(1 - x(1) - x(2))^2; 1/(1 - x(1) - x(2))^2, 1/(1 - x(1) - x(2))^2 + 1/x(2)^2];
- a = 1;
+ 
  %% Golden Section Algorithm
  for i = 1:N
 
