@@ -1,9 +1,12 @@
 %% Implenetation of Gradient Descent Algorithm
+clc;
+clear;
+close all;
 
 %% Parameters
+N = 50;
 x = zeros(2, N);
 x(:, 1) = [0.1; 0.1];
-N = 50;
 a = 0.01;
  
 %% Funtion to be Omptimized
