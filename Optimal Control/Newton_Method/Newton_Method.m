@@ -1,9 +1,12 @@
 %% Implenetation of Newton Method Algorithm
+clc;
+clear;
+close all;
 
 %% Parameters
+N = 7;
 x = zeros(2, N);
 x(:, 1) = [0.85; 0.05];
-N = 7;
 a = 1;
  
 %% Funtion to be Omptimized
